@@ -40,7 +40,7 @@ public class TThompsonSampling {
         double maxSampleValue = Double.NEGATIVE_INFINITY;
 
         int selectedIndex = -1;
-        //正規分布からサンプルして最大のものを選ぶ
+        //正規分布からサンプルして最大のものを選択する
         for(int i = 0; i < fNoOfArms; i++){
             double sampleValue = sample(fArms[i].getMu(), 1.0 / ( fArms[i].getSelectedCount() + 1) );
             if(maxSampleValue < sampleValue){
