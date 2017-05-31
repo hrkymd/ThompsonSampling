@@ -24,7 +24,7 @@ public class Main {
             int selectedIndex = thompsonSampling.selectArm();
             count[selectedIndex]++;
 
-            //
+            //腕を実行
             double reward = getReward(selectedIndex, random);
 
             //方策の更新
